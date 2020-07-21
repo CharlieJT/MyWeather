@@ -1,0 +1,6 @@
+.HourlyLineGraph {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    transition: height .3s ease-in;
+}

@@ -1,0 +1,10 @@
+.Navbar {
+    padding: 5px 10px;
+    color: #fff;
+    box-shadow: 2px 2px 5px #244f5d;
+    background-color: #244f5d;
+}
+
+.NavbarLogo {
+    width: 80px;
+}

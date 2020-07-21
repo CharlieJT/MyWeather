@@ -1,0 +1,18 @@
+.WeeklyWeather {
+    background-color: #8ec1d2;
+    color: #fff;
+    text-shadow: 2px 2px 5px #4a4a4f;
+    margin: auto;
+    border-radius: 10px;
+    transition: transform .17s ease-in, background-color .17s ease-in;
+}
+
+.WeeklyWeather * {
+    margin: 0;
+}
+
+.WeeklyWeather:hover {
+    background-color: #81b0bf;
+    transform: scale(1.01);
+    cursor: pointer;
+}

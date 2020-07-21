@@ -1,68 +1,60 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## MyWeather
 
-## Available Scripts
+The project is called MyWeather which will require you to enter a City/Town name followed by the country name with a comma for the best results.
 
-In the project directory, you can run:
+## Using MyWeather
 
-### `npm start`
+### Current Weather
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- When you have successfully entered a location name, you will be presented with the name of the Town/City followed by the country code which will also display the date & time.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- You have the option to switch from metric & imperial depending on which setup you like best.
 
-### `npm test`
+- You have a breakdown of current weather data which is split into current temperature, high temperature, low temperature, wind speed, humidity, time fo sunrise, time of sunset.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- When you click the 'Show Hourly Weather' button, you will be presented with a line graph showing you data for the temperature & wind speed throughout the next 24 hours. This has been created with the use of chart.js. Hovering over a specific point will show you a clearer reading of the information. Mobile version of this was removed as the graph was only made to look good on desktop.
 
-### `npm run build`
+### Weekly Weather
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- You will also been presented with a breakdown on the days of the week for the next 7 days which will show break down of bits of data, showing more data on desktop & less on mobile sure to space avaiable.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- When hovering over each of the days, an animation will show indicating that the box is clickable. Upon click, a modal will appear showing you more information about that specific. Alternatively a 'More' button is present which will have the same outcome.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Reusable Components
 
-### `npm run eject`
+- Components such as Modal, Backdrop, Buttons, Input, Spinner have been created with their own components to ensure reusability & to help with overall theme of the page.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Functions such as time/date converters have been outsourced into their own js file again to help with reusability.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Redux
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+I do realise that this type of set up for an app which hold information in one container is overkill & Redux is not really needed. But Redux is set up as an indication of how I would use it in a much bigger application. I like to split my Redux down into their own actions & reducers to help create a much leaner set-up.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Styling
 
-## Learn More
+- The styling has been coloured with a range of different shades of blue. 
+- Bootstrap has been used for grid layouts to better display data.
+- text has been styled white with a slight shadow.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Open Weather API
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- The API used for this project was the [Open Weather API](https://openweathermap.org/)
 
-### Code Splitting
+- Usually I would put the API key in a seperate .env file but this is a free version so I've added it straight to the api url.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Responsive Design
 
-### Analyzing the Bundle Size
+- Bootstrap grid system is used to improve the responsiveness of the application.
+- More data will be shown on desktop including the graph. This is due to the readability of the applcation.
+- This has been designed with a Mobile First approach.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Data
 
-### Making a Progressive Web App
+- I could have shown more data than there currently is but the purpose of this set-up is to show how I use the data that's been provided.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Get the project running in your local ide
 
-### Advanced Configuration
+1. To get started running this on your local IDE, first you need to clone this into 
+--------------------------------------------------
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

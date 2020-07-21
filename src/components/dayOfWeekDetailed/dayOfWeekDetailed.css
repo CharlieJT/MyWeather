@@ -1,0 +1,39 @@
+.DayOfWeekDetailed {
+    background-color: #8ec1d2;
+    color: #fff;
+    text-shadow: 2px 2px 5px #4a4a4f;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 2px 2px 5px #4a4a4f;
+}
+
+.DayOfWeekDetailed>* {
+    margin: 0;
+}
+
+.DayOfWeekDetailedImage {
+    width: 150px;
+}
+
+.TemperatureCol {
+    border-bottom: 2px solid #96c9da;
+}
+
+/* @media screen and (min-width: 575px) {
+    .CurrentWeather h1 {
+        font-size: 4.5rem;
+    }
+} */
+
+/* @media screen and (min-width: 767px) {
+    .TemperatureCol {
+        border-right: 2px solid #96c9da;
+        border-bottom: none;
+    }
+} */
+
+/* @media screen and (min-width: 991px) {
+    .CurrentWeather h1 {
+        font-size: 4rem;
+    }
+} */

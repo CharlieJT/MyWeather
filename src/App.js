@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
-import './App.css';
+import classes from './App.css';
 import MyWeather from './containers/MyWeather/MyWeather';
+import Layout from './hoc/Layout/Layout';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
 	render() {
 		return (
-			<MyWeather />
+			<div className={classes.App}>
+				<Layout>
+					<MyWeather />
+				</Layout>
+			</div>
 		);
 	}
 }

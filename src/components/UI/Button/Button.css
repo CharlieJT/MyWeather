@@ -1,0 +1,37 @@
+.Button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 5px 10px;
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color .17s ease-in;
+}
+
+.Button:disabled {
+    opacity: .3;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.General {
+    background-color: #224f5d;
+    color: #fff;
+}
+
+.General:hover {
+    background-color: #17343e;
+}
+
+.Done {
+    background-color: grey;
+    color: #fff;
+}
+
+.Done:hover {
+    background-color: #5a5a5a;
+}

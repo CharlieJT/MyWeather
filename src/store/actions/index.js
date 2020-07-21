@@ -1,0 +1,1 @@
+export { fetchCurrentWeather, fetchWeeklyWeather } from './weather';

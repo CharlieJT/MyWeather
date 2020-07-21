@@ -1,0 +1,50 @@
+.CurrentWeather {
+    color: #fff;
+    text-shadow: 2px 2px 5px #4a4a4f;
+    padding: 20px;
+    margin: auto;
+}
+
+.Jumbotron {
+    background-color: #8ec1d2;
+    padding: 1rem 4rem;
+}
+
+.CurrentWeather>* {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.CurrentWeather h1 {
+    font-weight: lighter;
+}
+
+.CurrentWeatherImage {
+    width: 150px;
+}
+
+.TemperatureCol {
+    border-bottom: 2px solid #96c9da;
+}
+
+@media screen and (min-width: 575px) {
+    .CurrentWeather h1 {
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .CurrentWeather h1 {
+        font-size: 3.5rem;
+    }
+    .TemperatureCol {
+        border-right: 2px solid #96c9da;
+        border-bottom: none;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .CurrentWeather h1 {
+        font-size: 4rem;
+    }
+}

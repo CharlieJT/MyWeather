@@ -1,0 +1,4 @@
+.Content {
+    min-height: calc(100vh - 80px);
+    margin-bottom: 50px;
+}
