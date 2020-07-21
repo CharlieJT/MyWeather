@@ -102,7 +102,10 @@ Alternatively, you can run this on Gitpod which skips the first 3 steps. If you'
 
 5. After this is complete, run the command `npm start` to start the development server on `http://localhost:3000/`. You should have the project up & running.
 
+## Issues
 
---------------------------------------------------
+- I had an issue getting weekly data with an input so I had to first fetch data for the specified location in my input to fetch information for current data to pass the lat & long from that data into the weekly API to fetch the weekly data. It still works but it's slightly slower as two requests need to be made when an input has been made & when the conversion between Celsius & Fahrenheit.
 
+## Logo
 
+- The MyWeather logo & favicon was created [here](https://www.brandcrowd.com/maker/tag/name).
