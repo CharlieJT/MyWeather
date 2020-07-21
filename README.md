@@ -52,9 +52,57 @@ I do realise that this type of set up for an app which hold information in one c
 
 - I could have shown more data than there currently is but the purpose of this set-up is to show how I use the data that's been provided.
 
-## Get the project running in your local ide
+## Testing
 
-1. To get started running this on your local IDE, first you need to clone this into 
+- As I'd like to dive deeper into Enzyme & Jest & due to the time it would take to get up to speed & incorperate it into this application, I've left this out for now.
+
+### A lot of manual testing has taken place such as:
+
+- Loading data.
+- State being correct at times when data is (being fetched).
+- State being correct at times when data has been fetched.
+- State being correct at times when data hasn't been fetched at all.
+- Buttons disabled at certain times.
+- Testing from Metric & Imperial & back again.
+- Checks to ensure previous data is gotten rid of if a user enters a location that is not recognised by the API.
+- All data is correct against other weather applications.
+- Data is showing for the correct timezone i.e. correct date & times.
+- Data is successfully being passed through correctly to the Line Graph & is updating at the relevant times.
+- All weekly data is being passed through correct against other weather applications.
+- Modal is showing the correct data at the time of when the modal is opened & is removed when modal is closed.
+- Responsiveness is working correctly & looks good on all devices.
+- Animations are working with their correct intention.
+- A location cannot be submitted if a user has an empty input field, this includes when enter is clicked or when the button is pressed.
+- Loading Spinner is showing at the correct time of it's intended purpose.
+- Footer is sitting at the bottom of the page at all times & will not 'float' if there's not alot of content on the page.
+- All images & fonts are sized appropriately for their purpose.
+
+
+## Code
+
+- The way the code has been created is 'overkill' for it's intended purpose in this application but I've done it this way so that you can get a good feel for how it would be structured in a much bigger application. I've created custom components such as Spinner, Button, Input, Modal, Backdrop to help with reusability. This makes for better UX throughout the application.
+
+- I've created smaller chunks of components to show more reusability such as Weekly Weather, Current Weather, Day of Week Detailed, Navbar Footer.
+
+- HOC components have been created to help with nesting components such as Layout. This is so that the user than Layout items such as Navbar & Footer that they want to show throughout the entire application at all times. Also this includes a ReactAux component which is used to help group together adjacent elements throughout the appplication.
+
+- Containers are used to group together sections throughout the application. This one specifically only used one but when more are created, you can split them apart from one another which makes things like 'routing' alot easier.
+
+## Get the project running in your local IDE (code editor)
+
+Alternatively, you can run this on Gitpod which skips the first 3 steps. If you've never worked with Gitpod before, you can find information at [The Gitpod Website](https://www.gitpod.io/)
+
+1. To get started running this on your local IDE, first you need to have your IDE open.
+
+2. Go to the top of this Github page, click on 'Code' & copy the url.
+
+3. Go to your IDE & open your terminal, ensure you are in correct directory where to want the project to be stored & run `git clone *url string you copied from github*`. This will clone the project.
+
+4. Ensure you have the project in your IDE & run the command `npm install --save`, this will install a node_modules package for you to get started.
+
+5. After this is complete, run the command `npm start` to start the development server on `http://localhost:3000/`. You should have the project up & running.
+
+
 --------------------------------------------------
 
 
