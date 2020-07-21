@@ -1,6 +1,24 @@
+
+
 ## MyWeather
 
 The project is called MyWeather which will require you to enter a City/Town name followed by the country name with a comma for the best results.
+
+- [**Using MyWeather**](#using-myweather)
+    - [**Current Weather**](#current-weather)
+    - [**Weekly Weather**](#weekly-weather)
+
+- [**Reusable Components**](#reusable-components)
+- [**Redux**](#redux)
+- [**Styling**](#styling)
+- [**Open Weather API**](#open-weather-api)
+- [**Responsive Design**](#responsive-design)
+- [**Data**](#data)
+- [**Testing**](#testing)
+- [**Code**](#code)
+- [**Get the project running in your local IDE**](#get-the-project-running-in-your-local-ide)
+- [**Issues**](#issues)
+- [**Logo**](#logo)
 
 ## Using MyWeather
 
@@ -88,11 +106,11 @@ I do realise that this type of set up for an app which holds information in one 
 
 - Containers are used to group sections together throughout the application. This one specifically only used one but when more are created, you can split them apart from one another which makes things like 'routing' a lot easier.
 
-## Get the project running in your local IDE (code editor)
+## Get the project running in your local IDE
 
 Alternatively, you can run this on Gitpod which skips the first 3 steps. If you've never worked with Gitpod before, you can find information at [The Gitpod Website](https://www.gitpod.io/)
 
-1. To get started running this on your local IDE, first you need to have your IDE open.
+1. To get started running this on your local IDE (Code editor), first you need to have your IDE open.
 
 2. Go to the top of this GitHub page, click on 'Code' & copy the URL.
 
