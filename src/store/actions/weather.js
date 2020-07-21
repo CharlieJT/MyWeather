@@ -65,7 +65,6 @@ export const fetchWeeklyWeather = (coordinates, conversion) => {
         dispatch(fetchWeeklyWeatherStart());
         axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&exclude=minutely&units=${conversion}&appid=8583135f95e725367f6ffea8d5ad8746`)
             .then(res => {
-                console.log(res)
                 dispatch(fetchWeeklyWeatherSuccess(res.data));
             }).catch(error => {
                 dispatch(fetchWeeklyWeatherFailed(error));
