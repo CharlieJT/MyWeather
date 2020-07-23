@@ -3,15 +3,17 @@ import Chart from "chart.js";
 import classes from "./hourlyLineGraph.css";
 import { timeConverterHour } from '../../../Helpers/Converters';
 
-const HourlyLineGraph = React.memo(({ hourlyWeather, conversion, hourlyWeatherShow }) => {
+const HourlyLineGraph = React.memo(({ hourlyWeather, conversion, hourlyWeatherShow, timezone }) => {
     const chartRef = useRef();
 
     const hourlyLabels = [];
     const hourlyTemps = [];
     const hourlyWindSpeeds = [];
 
+    console.log(timezone)
+
     hourlyWeather.slice(0, 25).forEach(weatherHour => {
-        hourlyLabels.push(timeConverterHour(weatherHour.dt));
+        hourlyLabels.push(timeConverterHour(weatherHour.dt + timezone));
         hourlyTemps.push(weatherHour.temp.toFixed(1));
         hourlyWindSpeeds.push(weatherHour.wind_speed.toFixed(1));
     });

@@ -77,7 +77,8 @@ const currentWeather = ({ currentWeather, conversion, metricClicked, imperialCli
                         <HourlyLineGraph 
                             hourlyWeather={hourlyWeather}
                             hourlyWeatherShow={hourlyWeatherShow}
-                            conversion={conversion}/>
+                            conversion={conversion}
+                            timezone={timezone}/>
                     </Col>
                     <Col xs={12}>
                         <Button btnType="General" clicked={toggleHourlyWeatherGraph}>{hourlyWeatherShow ? 'Hide' : 'Show'} Hourly Weather <FontAwesomeIcon icon={faChartLine} /></Button>
