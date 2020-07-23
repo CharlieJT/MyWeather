@@ -2,7 +2,7 @@ export const dateConverter = (unixTimestamp) => {
     const a = new Date(unixTimestamp * 1000);
     const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
     const month = months[a.getMonth()];
-    const days = ['Sunday','Monday','Tueday','Wednesday','Thursday','Friday','Saturday'];
+    const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
     const day = days[a.getDay()];
     const date = a.getDate();
     const todaysDate = day + ' ' + date + ' ' + month;

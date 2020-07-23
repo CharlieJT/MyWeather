@@ -14,7 +14,7 @@ const currentWeather = ({ currentWeather, conversion, metricClicked, imperialCli
     const { unitTemp, unitSpeed } = conversion;
 
     return (
-        <Container fluid={true} className={classes.CurrentWeather}>
+        <Container fluid={true} className={[classes.CurrentWeather, "px-md-5 pb-2 col-12"].join(' ')}>
             <Row className="d-flex justify-content-between align-items-end text-left mb-4 px-md-5">
                 <Col xs={12} sm={6}>
                     <div>
@@ -29,7 +29,7 @@ const currentWeather = ({ currentWeather, conversion, metricClicked, imperialCli
                     </div>
                 </Col>
             </Row>
-            <Jumbotron className={classes.Jumbotron}>
+            <Jumbotron className={[classes.Jumbotron, "mb-3"].join(' ')}>
                 <Row className="mb-4 px-md-5">
                     <Col xs={12} md={6} className={[classes.TemperatureCol, "d-flex justify-content-center"].join(' ')}>
                         <div className="d-flex flex-column justify-content-center">
@@ -45,27 +45,27 @@ const currentWeather = ({ currentWeather, conversion, metricClicked, imperialCli
                     </Col>
                     <Col xs={12} md={6} className="text-center py-4">
                         <Row>
-                            <Col xs={{ span: 6, order: 1 }} md={{ span: 4, order: 1 }}>
+                            <Col xs={{ span: 6, order: 1 }} lg={{ span: 4, order: 1 }}>
                                 <h4>{parseInt(temp_max)}&deg;{unitTemp}</h4>
                                 <p>High</p>
                             </Col>
-                            <Col xs={{ span: 6, order: 2 }} md={{ span: 4, order: 4 }}>
+                            <Col xs={{ span: 6, order: 2 }} lg={{ span: 4, order: 4 }}>
                                 <h4>{parseInt(temp_min)}&deg;{unitTemp}</h4>
                                 <p>Low</p>
                             </Col>
-                            <Col xs={{ span: 6, order: 3 }} md={{ span: 4, order: 2 }}>
+                            <Col xs={{ span: 6, order: 3 }} lg={{ span: 4, order: 2 }}>
                                 <h4>{speed.toFixed(1)}{unitSpeed}</h4>
                                 <p>Wind</p>
                             </Col>
-                            <Col xs={{ span: 6, order: 4 }} md={{ span: 4, order: 5 }}>
+                            <Col xs={{ span: 6, order: 4 }} lg={{ span: 4, order: 5 }}>
                                 <h4>{humidity}&#37;</h4>
                                 <p>Humidity</p>
                             </Col>
-                            <Col xs={{ span: 6, order: 5 }} md={{ span: 4, order: 3 }}>
+                            <Col xs={{ span: 6, order: 5 }} lg={{ span: 4, order: 3 }}>
                                 <h4>{timeConverter(sunrise + timezone)}</h4>
                                 <p>Sunrise</p>
                             </Col>
-                            <Col xs={{ span: 6, order: 6 }} md={{ span: 4, order: 6 }}>
+                            <Col xs={{ span: 6, order: 6 }} lg={{ span: 4, order: 6 }}>
                                 <h4>{timeConverter(sunset + timezone)}</h4>
                                 <p>Sunset</p>
                             </Col>
