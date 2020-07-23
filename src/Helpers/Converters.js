@@ -22,7 +22,7 @@ export const dateShortHandConverter = (unixTimestamp) =>{
 
 export const dayOfWeek = (unixTimestamp) =>{
     const a = new Date(unixTimestamp * 1000);
-    const days = ['Sunday','Monday','Tueday','Wednesday','Thursday','Friday','Saturday'];
+    const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
     const day = days[a.getDay()];
     return day;
 }
