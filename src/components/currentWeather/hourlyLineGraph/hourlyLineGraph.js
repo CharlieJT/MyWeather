@@ -10,8 +10,6 @@ const HourlyLineGraph = React.memo(({ hourlyWeather, conversion, hourlyWeatherSh
     const hourlyTemps = [];
     const hourlyWindSpeeds = [];
 
-    console.log(timezone)
-
     hourlyWeather.slice(0, 25).forEach(weatherHour => {
         hourlyLabels.push(timeConverterHour(weatherHour.dt + timezone));
         hourlyTemps.push(weatherHour.temp.toFixed(1));
