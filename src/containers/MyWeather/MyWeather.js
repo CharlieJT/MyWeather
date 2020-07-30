@@ -52,13 +52,14 @@ class MyWeather extends Component {
     }
 
     onSubmitLocationHandler = (event) => {
+        const { value } = this.state.locationInput;
         event.preventDefault();
         const locationState = { ...this.state.locationInput };
         locationState.value = '';
         locationState.valid = false;
         this.setState({ locationInput: locationState });
-        if (this.props.locationSearch !== this.state.locationInput.value) {
-            this.props.onSetCurrentWeather(this.state.locationInput.value, "metric");
+        if (this.props.locationSearch !== value) {
+            this.props.onSetCurrentWeather(value, "metric");
             const newConversion = { ...this.state.conversion };
             newConversion.unitTemp = "C";
             newConversion.unitSpeed = "mph";
@@ -79,10 +80,7 @@ class MyWeather extends Component {
     }
 
     openModalHandler = (weatherData, date) => {
-        const modalInfo = {
-            date: date,
-            weatherData: weatherData
-        };
+        const modalInfo = { date, weatherData };
         this.setState({ dayOfWeekDetailed: modalInfo, modalActive: true });
     }
 
