@@ -5,14 +5,13 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { timeConverter, dateConverter } from '../../Helpers/Converters';
 
 const dayOfWeekDetailed = ({ dayOfWeekDetailed, conversion, modalClose, timezoneOffset }) => {
-    const { date, weatherData: { weather, sunrise, sunset, temp: { min, max, day, morn, night }, humidity, wind_speed } } = dayOfWeekDetailed;
+    const { dt, weather, sunrise, sunset, temp: { min, max, day, morn, night }, humidity, wind_speed } = dayOfWeekDetailed.weatherData;
     const { unitTemp, unitSpeed } = conversion;
-
     return (
         <Container className={classes.DayOfWeekDetailed}>
             <Row>
                 <Col>
-                    <h2 className="mb-0">{dateConverter(date)}</h2>
+                    <h2 className="mb-0">{dateConverter(dt)}</h2>
                     <p className="mb-0">{weather[0].description}</p>
                 </Col>
             </Row>

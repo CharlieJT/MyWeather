@@ -35,7 +35,7 @@ const weeklyWeather = ({ dailyWeather, conversion, modalOpen }) => {
                     <p>Wind</p>
                 </Col>
                 <Col>
-                    <Button btnType="General" clicked={() => modalOpen(dailyWeather, dt)}>More <FontAwesomeIcon icon={faInfoCircle} /></Button>
+                    <Button btnType="General" clicked={() => modalOpen(dailyWeather)}>More <FontAwesomeIcon icon={faInfoCircle} /></Button>
                 </Col>
             </Row>
         </Col>

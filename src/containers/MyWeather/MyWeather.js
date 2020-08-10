@@ -79,8 +79,8 @@ class MyWeather extends Component {
         }
     }
 
-    openModalHandler = (weatherData, date) => {
-        const modalInfo = { date, weatherData };
+    openModalHandler = (weatherData) => {
+        const modalInfo = { weatherData };
         this.setState({ dayOfWeekDetailed: modalInfo, modalActive: true });
     }
 

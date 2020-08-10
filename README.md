@@ -4,7 +4,9 @@
 
 The project is called MyWeather which will require you to enter a City/Town name followed by the country name with a comma for the best results.
 
-The project is built with React + Redux using ES6 Javascript. 
+The project is built with React + Redux using ES6 Javascript.
+
+- The application can be found at [https://charlie-jt-my-weather.netlify.app/](https://charlie-jt-my-weather.netlify.app/)
 
 - [**Using MyWeather**](#using-myweather)
     - [**Current Weather**](#current-weather)
